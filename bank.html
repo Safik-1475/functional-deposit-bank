@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amera Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="font-bold text-3xl text-center my-2">Let's get some <span calss="color-sky-400">Mooney!!</span></h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+        <!-- Transitions -->
+        <section class="mt-10">
+            <div class="grid grid-cols-3 gap-4 text-white">
+                <div class="bg-blue-500 p-8 rounded-lg ">
+                    <h4 class="font-bold text-3xl">Deposit</h4>
+                    <h3 class="font-extrabold text-5xl">$<span id="deposit-amount">00</span></h3>
+                </div>
+                <div class="bg-yellow-500 p-8 rounded-lg">
+                    <h4 class="font-bold text-3xl">Withdraw</h4>
+                    <h3 id="withdraw-amount" class="font-extrabold text-5xl">$<span id="withdraw-balance">00</span></h3>
+                </div>
+                <div class="bg-green-500 p-8 rounded-lg">
+                    <h4 class="font-bold text-3xl">Balance </h4>
+                    <h3 id="current-amount" class="font-extrabold text-5xl">$<span id="total-balance"> 1250</span>
+                    </h3>
+                </div>
+            </div>
+        </section>
+        <!-- Deposit Amount -->
+        <section class="mt-4">
+            <div class="grid grid-cols-2 gap-4 text-slate-700">
+                <div class="bg-green-300 rounded-lg p-7">
+                    <h4 class="font-bold text-2xl">Please Deposit</h4>
+                    <input id="deposit-input" class="w-full p-2 my-3 rounded-md" type="text"
+                        placeholder="$ Amount you want deposit">
+                    <button id="deposit-btn"
+                        class="deposit-button py-2 px-3 rounded-md block bg-yellow-500">Deposit</button>
+                </div>
+
+                <div class="bg-red-300 rounded-lg p-7">
+                    <h4 class="font-bold text-2xl">Please Withdraw </h4>
+                    <input id="withdraw-input" class="w-full p-2 my-3 rounded-md" type="text"
+                        placeholder="$ Amount you want Withdraw">
+                    <button id="withdraw-btn"
+                        class="deposit-button py-2 px-3 rounded-md block bg-yellow-500">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./js/bank.js"></script>
+</body>
+
+</html>
+
+git remote add origin https://github.com/Safik-1475/functional-deposit-bank.git
